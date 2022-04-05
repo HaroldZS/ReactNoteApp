@@ -32,13 +32,13 @@ class TodoForm extends React.Component {
             <div className='card'>
                 <form className='card-body' onSubmit={this.handleSubmit}>
                     <div className='form-group'>
-                        <input type="text" name="title" onChange={this.handleInput} className="form-control" placeholder="Title" />
+                        <input type="text" name="title" onChange={this.handleInput} className="form-control" placeholder="Title" required />
                     </div>
                     <div className='form-group'>
-                        <input type="text" name="responsible" onChange= {this.handleInput} className="form-control" placeholder="Responsible" />
+                        <input type="text" name="responsible" onChange= {this.handleInput} className="form-control" placeholder="Responsible" required />
                     </div>
                     <div className='form-group'>
-                        <input type="text" name="description" onChange= {this.handleInput} className="form-control" placeholder="Description" />
+                        <input type="text" name="description" onChange= {this.handleInput} className="form-control" placeholder="Description" required />
                     </div>
                     <div className='form-group'>
                         <select name='priority' onChange={this.handleInput} className='form-control'>
